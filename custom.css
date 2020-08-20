@@ -20,8 +20,7 @@ html, body {
     position: relative;
 }
 
-
-
+/* Utilities */
 .bg-grey-light{
     background-color: var(--jood-grey-light);    
 }
@@ -93,8 +92,6 @@ small{
 }
 
 
-
-
 /* Navbar */
 .navbar {
     position: fixed;
@@ -142,6 +139,7 @@ nav .nav-link {
     color: white!important;
     border-color: white !important;
 }
+
 
 /* Home */
 #home {
@@ -201,6 +199,7 @@ nav .nav-link {
     box-shadow: none;
 }
 
+
 /* Features */
 #features-cards img{
     max-height: 50px;
@@ -214,6 +213,7 @@ nav .nav-link {
     padding-right: 0;
 }
 
+
 /* Screens */
 #screens-content, #statistics-content, #download, #contact {
     padding: 5em 0;
@@ -221,6 +221,7 @@ nav .nav-link {
 #screens-img img{
     width: 100%;
 }
+
 
 /* Statistics */
 #statistics {
@@ -239,6 +240,7 @@ nav .nav-link {
     margin: 0.5em 0
 }
 
+
 /* Download */
 #download{
     min-height: 300px;
@@ -247,6 +249,7 @@ nav .nav-link {
     background-position: center;
     overflow: hidden;
 }
+
 
 /* Contact */
 textarea {
@@ -261,6 +264,7 @@ textarea {
 .form-control:focus {
     background: var(--jood-grey-light) !important;
 }
+
 
 /* Footer */
 footer {
@@ -357,14 +361,10 @@ footer {
         transform: scale(0.9);
         margin-left: -9em
     }
-    #about-design {
-        /* transform: rotate(60deg); */
-    }
     #about-smartphone{
         bottom: 0;
         right: 0;
     }
-
 
     /* Statistics */
     #statistics-content {
@@ -401,8 +401,6 @@ footer {
     #home-img img{
         margin-left: 10em;
     }
-
-
 
     /* Features */
     #features-img{
