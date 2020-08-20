@@ -23,8 +23,10 @@ html, body {
 
 
 .bg-grey-light{
-    background-color: var(--jood-grey-light);
-    
+    background-color: var(--jood-grey-light);    
+}
+.animate-delay {
+    animation-delay: 0.2s;
 }
 
 /* Typography */
@@ -356,24 +358,13 @@ footer {
         margin-left: -9em
     }
     #about-design {
-        transform: rotate(60deg);
+        /* transform: rotate(60deg); */
     }
     #about-smartphone{
         bottom: 0;
         right: 0;
     }
-    /* .aboutDesignRotate{
-        animation: aboutDesignRotate 2s ease forwards;
-        animation-delay: 0.8s;
-    }
-    @keyframes aboutDesignRotate {
-        0% {
-            transform: rotate(60deg);
-        }
-        100% {
-            transform: rotate(0deg);
-        }
-    } */
+
 
     /* Statistics */
     #statistics-content {
