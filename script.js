@@ -35,14 +35,11 @@ $(document).ready(function() {
         let pageSection = $('.nav-item a.active')[0].hash
         switch (pageSection) {
             case '#about':
-                $('#about-design').removeClass('d-none')
-                $('#about-design').addClass('animate__rotateIn animate__slow animate-delay')
-                $('#about-smartphone').addClass('animate__fadeIn animate__faster')
+                $('#about-design').addClass('animate__rotateIn zoomRotateIn')
                 break;
             case '#features':
-                $('#features-smartphone, #features-design').removeClass('d-none')
+                $('#features-design').removeClass('d-none')
                 $('#features-design').addClass('animate__zoomIn animate__fast animate-delay')
-                $('#features-smartphone').addClass('animate__fadeIn animate__faster')
                 break;
             default:
                 break;
