@@ -570,16 +570,11 @@ footer {
     }
 
     #features-content{
-        /* max-width: unset; */
         justify-content: space-between;
     }
     #features-text, #features-cards{
         margin-left: -22em
     }
-    #screens-content, #statistics-content, #download, #contact {
-        /* padding: 10em 0; */
-    }
-
 }
  
 
