@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    // Hide navbar-collapse on link click
+    // Hide navbar-collapse on nav-link click
     $('.navbar-nav>li>a, .navbar-brand').on('click', function(){
         $('.navbar-collapse').collapse('hide');
     });
@@ -35,7 +35,7 @@ $(document).ready(function() {
         let pageSection = $('.nav-item a.active')[0].hash
         switch (pageSection) {
             case '#about':
-                $('#about-design').addClass('animate__rotateIn zoomRotateIn')
+                $('#about-design').addClass('zoomRotateIn')
                 break;
             case '#features':
                 $('#features-design').removeClass('d-none')
