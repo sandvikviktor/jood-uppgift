@@ -1,4 +1,54 @@
 $(document).ready(function() {
+    
+
+    // Logotypes Slider
+    let logosOwl = $('#logo-carousel')
+    logosOwl.owlCarousel({
+        items: 4,
+        loop: true,
+        margin: 130,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        autoplayHoverPause: true,
+        dots: false,
+        nav: false,
+        responsive: {
+            0:{
+                items: 2
+            },
+            768: {
+                items: 3
+            },
+            1200: {
+                items: 4
+            }
+        }
+    })
+
+    // Mobile Screens Slider
+    let screensOwl = $('#screens-carousel')
+    screensOwl.owlCarousel({
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        autoplayHoverPause: true,
+        dots: false,
+        nav: false,
+        center: true,
+        responsive: {
+            0:{
+                items: 1
+            },
+            768: {
+                items: 3
+            },
+            1200: {
+                items: 5
+            }
+        }
+    })
+
 
     // Hide navbar-collapse on nav-link click
     $('.navbar-nav>li>a, .navbar-brand').on('click', function(){
