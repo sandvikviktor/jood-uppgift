@@ -1,5 +1,4 @@
-$(document).ready(function() {
-    
+$(document).ready(function() {    
 
     // Logotypes Slider
     let logosOwl = $('#logo-carousel')
@@ -8,7 +7,7 @@ $(document).ready(function() {
         loop: true,
         margin: 130,
         autoplay: true,
-        autoplayTimeout: 4000,
+        autoplayTimeout: 3000,
         autoplayHoverPause: true,
         dots: false,
         nav: false,
@@ -31,7 +30,7 @@ $(document).ready(function() {
         loop: true,
         margin: 10,
         autoplay: true,
-        autoplayTimeout: 4000,
+        autoplayTimeout: 3000,
         autoplayHoverPause: true,
         dots: false,
         nav: false,
@@ -90,6 +89,30 @@ $(document).ready(function() {
             case '#features':
                 $('#features-design').removeClass('d-none')
                 $('#features-design').addClass('animate__zoomIn animate__fast animate-delay')
+                break;
+            case '#statistics':
+                //  Counter Animation
+                const counters = document.querySelectorAll('.counter');
+                const speed = 200;
+                counters.forEach(counter => {
+                    const updateCount = () => {
+                        const target = +counter.getAttribute('data-target');
+                        const count = +counter.innerText;
+                        const inc = target / speed;
+                        
+                        if(count < target) {
+                            counter.innerText = '+' + Math.ceil(count + inc);
+                            setTimeout(updateCount, 1)
+                        } else {
+                            count.innerText = target;
+                        }
+                    }
+                    updateCount()
+                })
+                break;
+            case '#download':
+                $('#download-img').removeClass('d-none')
+                $('#download-img img').addClass('animate__slideInUp')
                 break;
             default:
                 break;

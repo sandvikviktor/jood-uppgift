@@ -218,7 +218,6 @@ nav .nav-link {
 
 
 /* Screens */
-
 #screens-content, #download, #contact {
     padding: 5em 0;
 }
@@ -229,6 +228,7 @@ nav .nav-link {
 }
 #screens-carousel .owl-item.active.center {
     transform: scale(.9);
+    opacity: 1 !important;
 }
 #screens-carousel .owl-item.active.center::after {
     content: '';
@@ -242,6 +242,10 @@ nav .nav-link {
     top: -2.5%;
     bottom: -7.5%;
     z-index: -1;
+}
+#screens-carousel .owl-item.active, 
+#screens-carousel .owl-item.active + div {
+    opacity: 0.4;
 }
 
 
@@ -272,6 +276,16 @@ nav .nav-link {
     background-position: center;
     overflow: hidden;
 }
+#download-img img{
+    right: -2em;
+    bottom: -25em;
+}
+@media (max-width: 1200px) {
+    #download-img {
+        display: none;
+    }
+}
+
 
 
 /* Contact */
@@ -488,24 +502,12 @@ footer {
     #screens-img{
         transform: scale(1.15);
     }
-    #screens-carousel::after {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0;
-        bottom: 0;
-        width: 22%;
-        background: linear-gradient(to right, rgba(255, 255, 255, 0.705) 0%, rgba(255,255,255,0.5998774509803921) 85%, rgba(255, 255, 255, 0) 100%);
+    #screens-carousel .owl-item.active + div {
+        opacity: 0.7;
     }
-    #screens-carousel::before {
-        content: '';
-        position: absolute;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        width: 22%;
-        background: linear-gradient(to left, rgba(255, 255, 255, 0.705) 0%, rgba(255,255,255,0.5998774509803921) 85%, rgba(255, 255, 255, 0) 100%);
-        z-index: 2;
+    #screens-carousel .owl-item.active,
+    #screens-carousel .owl-item.active + div + div + div + div {
+        opacity: 0.4;
     }
 
     /* Statistics */
@@ -516,6 +518,7 @@ footer {
     #statistics p{
         max-width: 30em;
     }
+    
 
     /* Download */
     #download {
@@ -530,9 +533,6 @@ footer {
     }
     #download-img{
         transform: scale(0.9);
-        display: block !important;
-        margin-bottom: -14em;
-        margin-right: -1.5em;
     }
     #download-buttons{
         justify-content: start !important;
@@ -640,6 +640,10 @@ footer {
     right: -20px;
     bottom: -20px;
     }
+
+    #download-img{
+        transform: scale(1.1);
+    }
 }
 
 /* 4k */
@@ -669,10 +673,6 @@ footer {
     }
     #screens-content, #statistics-content, #download, #contact, footer {
         padding: 10em 0;
-    }
-    #download-img{
-        transform: scale(1.1);
-        margin-bottom: -20em;
     }
 
     #screens-carousel .owl-item.active.center::after {

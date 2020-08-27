@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="custom.css">
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="300">
+<body data-spy="scroll" data-target=".navbar" data-offset="400">
     
     <!-- Home Starts -->
     <div id="home">
@@ -43,6 +43,12 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#screens">Screens</a>
+                </li>
+                <li class="nav-item d-none">
+                  <a href="#download" class="nav-link"></a>
+                </li>
+                <li class="nav-item d-none">
+                  <a href="#statistics" class="nav-link"></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact Us</a>
@@ -93,9 +99,7 @@
     <!-- Home Ends -->  
 
     <!-- About Starts -->
-    <div id="about" class="container">        
-      <!-- <img id="ec" src="/images/logotypes/ec.png" class="ml-2 d-none d-lg-block" alt=""> -->
-
+    <div id="about" class="container">
         <!-- About Content -->
         <div id="about-content" class="position-relative d-flex flex-column align-items-center justify-content-center flex-lg-row justify-content-lg-between">
           <div id="about-img">       
@@ -124,7 +128,6 @@
               </div>                
           </div>            
         </div>
-
     </div>
     <!-- About Ends -->
 
@@ -218,7 +221,7 @@
           <img src="images/smartphones/screensMobile.png" class="mx-auto" alt="">
         </div> -->
         <div class="d-flex justify-content-center align-items-center">
-          <div id="screens-carousel" class="col-7 col-md-11 col-lg-11 owl-carousel owl-theme">
+          <div id="screens-carousel" class="screens-carousel col-7 col-md-11 col-lg-11 owl-carousel owl-theme">
             <div class="item">
               <img src="images/smartphones/screen.png" alt="screen1">
             </div>
@@ -248,19 +251,19 @@
           <p class="mx-auto">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
           <div id="statistics-flex" class="row justify-content-center align-items-center">      
             <div class="col-12 col-sm-6 col-lg-3">
-              <h2 class="mr-3">+1430</h2>
+              <h2 class="counter mr-3" data-target="1430">0</h2>
               <h5>Clients</h5>
             </div>
             <div class="col-12 col-sm-6 col-lg-3">
-              <h2 class="mr-3">+2430</h2>
+              <h2 class="counter mr-3" data-target="2430">0</h2>
               <h5>Beneficiaries</h5>
             </div>
             <div class="col-12 col-sm-6 col-lg-3">
-              <h2 class="mr-3">+1430</h2>
+              <h2 class="counter mr-3" data-target="1430">0</h2>
               <h5>Positive reviews</h5>
             </div>
             <div class="col-12 col-sm-6 col-lg-3">
-              <h2 class="mr-3">+10.430</h2>
+              <h2 class="counter mr-3" data-target="10430">0</h2>
               <h5>Downloads</h5>
             </div>
           </div>
@@ -273,7 +276,7 @@
     <!-- Download Section Starts -->
     <div id="download" class="text-white">
       <div id="download-content" class="container text-center">
-        <div class="col-xl-6 ">
+        <div class="col-xl-6">
           <h2>Download the application now! to enjoy its features</h2>
           <p class="text-white">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
           <div id="download-buttons" class="row col-xl-12 align-items-center justify-content-center mx-auto">
@@ -293,8 +296,8 @@
             </div>
           </div>          
         </div>          
-        <div id="download-img" class="d-none">
-          <img src="images/smartphones/downloadMobile.png" alt="">
+        <div id="download-img" class="d-none position-relative w-100 h-100">
+          <img class="animate__animated position-absolute" src="images/smartphones/downloadMobile.png" alt="">
         </div>
       </div>
 
